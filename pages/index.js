@@ -14,12 +14,13 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Hi Norvillie !
+
         </h1>
 
         <p className={styles.description}>
           Now are going to start new project: 
           e-app
-          
+          9/25/2022
         </p>
         <p className={styles.description}>
          
