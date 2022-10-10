@@ -6,8 +6,10 @@ export const dummyData = [
     productName: "",
     productDescription: "",
     productImages: [],
+    productColor: [],
     productPrice: 0.00,
-    productSlug: ""
+    productSlug: "",
+    onSale: false
   }
 ]
 
