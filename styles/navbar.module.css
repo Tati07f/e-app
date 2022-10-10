@@ -1,0 +1,22 @@
+.nav_container{
+    
+  display:flex;
+  justify-content:space-between;
+  padding: 1rem;
+  width: 100vw;
+  height: 2rem;
+  background-color: var(--background-color);
+  color: var(--black-color);
+}
+.menu{
+    width:40%;
+    background-color: var(--light-grey);
+}
+.logo{
+    width: 200px;
+
+}
+
+.right_side{
+    width:40%;
+}

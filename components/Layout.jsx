@@ -6,7 +6,7 @@ import style from '../styles/layout.module.css'
 
 const Layout = ({children}) => {
   return (
-    <div className={style.container}>
+    <div className={style.layout_container}>
       <Header />
       {children}
       <Footer />

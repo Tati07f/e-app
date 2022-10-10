@@ -18,7 +18,11 @@ a {
 }
 
 :root {
-  --primary-color: red;
-  --secondary-color: blueviolet;
-  --bg-color: lightgray;
+  --primary-color: #e3006e;
+  --black-color: rgb(0, 0, 0);
+  
+  --secondary-color: #f6d7e7;
+  --bg-color: rgb(255, 255, 255);
+  --light-grey: #e6e6e6;
+  --dark-grey: #949494;
 }

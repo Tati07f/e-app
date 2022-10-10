@@ -3,7 +3,7 @@ import style from '../styles/footer.module.css'
 
 const Footer = () => {
   return (
-    <footer className={style.container} >Copyright 2022</footer>
+    <footer className={style.footer_container} >Copyright 2022</footer>
   )
 }
 
