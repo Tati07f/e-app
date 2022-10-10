@@ -10,6 +10,6 @@ export const dummyData = [
     productPrice: 0.00,
     productSlug: "",
     onSale: false
-  }
+  },
 ]
 
