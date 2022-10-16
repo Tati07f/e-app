@@ -1,12 +1,15 @@
 import React from 'react'
 import style from '../styles/main.module.css'
+import ProductCard from './ProductCard'
 
-const Main = () => {
+const Main = ({products}) => {
+
   return (
     <div className={style.main_container}>
-      <h1>Hello world!</h1>
+      { products.map( product => <ProductCard key={ product.sys.id } product={product} /> ) }
     </div>
   )
+
 }
 
 export default Main

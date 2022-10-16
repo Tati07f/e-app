@@ -9,7 +9,9 @@ export const dummyData = [
     productColor: [],
     productPrice: 0.00,
     productSlug: "",
-    onSale: false
+    onSale: false,
+    productRadtingQuantify: 0,
+    productRating: 0
   },
 ]
 
