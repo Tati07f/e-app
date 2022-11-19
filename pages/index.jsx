@@ -5,12 +5,19 @@ import { contentFulClient } from '../hooks/useContentFul'
 
 export default function Home({ products }) {
   return (
-    <div className={styles.container}>
+    <div >
       
       <Head>
         <title>Makra</title>
         <meta name="description" content="Beauty Product Online Store" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          />
+
+
       </Head>
 
       <Main products={products} />

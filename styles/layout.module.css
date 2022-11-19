@@ -1,15 +1,25 @@
 .layout_container {
+  /* it was overflow- error because of it was width:100vw; so changed on max-width works well! */
   width: 100vw;
+ max-width: 100vw;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr ;
   grid-template-rows: auto 1fr auto;
   background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
 }
-
-@media screen and (min-width: 720px ) {
-  .container{
+/* 
+@media (max-width: 1200px ) and (min-width: 620px ) {
+  .layout_container{
     grid-template-columns: 0.25fr 1fr;
     grid-template-rows: 1fr auto;
   }
 }
+@media (max-width: 619px )  {
+  .layout_container{
+    grid-template-columns: 0.10fr 0.5fr;
+    grid-template-rows: 1fr auto;
+  }
+} */

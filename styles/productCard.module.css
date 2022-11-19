@@ -1,12 +1,14 @@
 .product_card {
   padding: 1rem;
-  /* max-width: 500px; */
+  max-width: 30vw; 
+ 
   height: min-content;
   border: 1px solid var(--light-grey);
   transition: all ease-in;
-  /* align-self: center; */
+  align-self: center; 
   justify-self: center;   
-  margin: 0.5rem;
+  margin: 0;
+  background-color: var(--bg-color);
 }
 
 .product_card:hover {
@@ -23,7 +25,7 @@
   position: relative;
   background-color: green;
   height: 300px;
-  margin: 0.2rem;
+  margin: 0;
   overflow: hidden;
   border-radius: 3px;
 }
