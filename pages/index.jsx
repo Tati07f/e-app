@@ -15,7 +15,7 @@ export default function Home({ products }) {
       </Head>
 
       <Main />
-      <ProductPage products={products} />
+      {/* <ProductPage products={products} /> */}
 
     </div>
   )
