@@ -1,14 +1,135 @@
 .footer_container {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  background-color: var(--secondary-color);
-  width: 100%;
+  display: block;
+  padding: 0;
   margin: 0;
+  width: 100%;
+}
+.follow_box{
+  width: 100%;
+  min-height: 5rem;
+  background-color: var(--light-grey-tran);
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid var(--dark-grey);
+  border-bottom: 1px solid var(--dark-grey);
 }
 
-@media screen and (min-width: 720px) {
-  .container{
-    grid-column: span 2;
-  }
+.icons_box{
+  max-width: 80%;
+  height: 100%;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap; 
+  
 }
+.iconF{
+  width: 2rem;
+  height: 2rem;
+  padding: 2px;
+  margin-left: 1rem;
+}
+
+.newsletter_box{
+  max-width: 80%;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap; 
+}
+.subscribe_text{
+  font-size: var(--f-size-xs);
+  font-weight: 400;
+  padding: 3px 20px;
+}
+
+.input_email{
+  height: 2rem;
+  min-width: 14rem;
+  padding: 5px 12px;
+  font-size: var(--f-size-xxs);
+  border: 1px solid var(--dark-grey) !important;
+  background-color: var(--light-grey-tran);
+}
+
+.footer_box{
+  min-height: 30vh;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  
+}
+.columns{
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  
+}
+.column_1 , .column_2, .column_3, .column_4{
+  max-width: 20rem;
+  padding: 1rem;
+}
+
+.title_h3{
+  font-size: var(--f-size-s); 
+  font-weight: 600;
+  padding: 8px 0 4px 0;
+  text-transform: uppercase;
+}
+
+.terms_container{
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--f-size-s);
+  text-transform: uppercase;
+  border-top: 1px solid var(--dark-grey);
+  background-color: var(--light-grey-tran);
+}
+
+.text_links{
+  padding: 0.5rem 0.5rem;
+}
+.text_links:hover{
+  padding: 0.5rem 0.4rem;
+  font-weight: 600;
+}
+
+
+@media (max-width: 720px) {
+
+
+  .follow_box{
+    padding: 0.5 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+.icons_box{
+  padding: 0.5rem 0;
+}
+.newsletter_box{
+  padding: 0.6rem 0;
+  align-items: center;
+}
+
+.columns{
+  padding: 0 1rem;
+  flex-flow: row  wrap;
+  justify-content:space-evenly;
+}
+
+
+.terms_container{
+  min-height: 5rem;
+  padding: 2% 5%;
+  text-align: center;
+  font-size: var(--f-size-xs);
+}
+
+
+}
+

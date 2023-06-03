@@ -1,11 +1,6 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout'
 
-import { library } from '@fortawesome/fontawesome-svg-core'
-
-import { faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons'
-
-library.add( faCartShopping, faUser)
 
 
 

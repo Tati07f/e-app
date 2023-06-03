@@ -18,13 +18,24 @@ a {
   margin: 0;
 }
 
+input[type=text]{
+  border: none;
+  border-bottom: 1px solid --dark-grey;
+}
 
 :root {
   --primary-color: #e3006e;
   --black-color: rgb(0, 0, 0);
-  
-  --secondary-color: #f3e4ec;
+  --secondary-color: #f7cde4;
   --bg-color: rgb(255, 255, 255);
   --light-grey: #e6e6e6;
-  --dark-grey: #949494;
+  --light-grey-tran: #e6e6e68e;
+  --dark-grey: #5b5b5b;
+
+  --f-size-xxs: 0.9rem;
+  --f-size-xs: 1.1rem;
+  --f-size-s: 1.25rem;
+  --f-size-m: 1.5rem;
+
+
 }

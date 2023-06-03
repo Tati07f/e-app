@@ -1,0 +1,10 @@
+
+
+.prod_container{
+width: 100%;
+padding: 1rem;
+display: flex;
+flex-flow: row wrap;
+margin: 0;
+padding: 0;
+}

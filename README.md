@@ -11,6 +11,7 @@ Future Implementation
 - [ ]Auth0
 - [ ]Static File Generation
 - [ ]Apply Fonts
+- [x]Carousel
   
 
 ---

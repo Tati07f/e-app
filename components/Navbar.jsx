@@ -2,10 +2,25 @@
 import Link from "next/link";
 import style from '../styles/navbar.module.css'
 import React, { useState } from 'react';
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import NavItem from "./NavItem";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// now import the icons you want
+import {
+  
+  faLocationDot,
+  faPhone,
+  faUser,
+  faCartShopping,
+  faSearch,
+  faHeartCircleCheck
+
+} from "@fortawesome/free-solid-svg-icons";
+
+
 
 const MENU_LIST = [
   { text: "MAKEUP", href: "/" },
@@ -14,6 +29,8 @@ const MENU_LIST = [
   { text: "FRAGRANCE", href: "/" },
   { text: "TOOLS & ACCESSORIES", href: "/" },
   { text: "BATH & BODY", href: "/" },
+  { text: "SALE & OFFERS", href: "/" },
+  { text: "GIFTS", href: "/" },
 ]
 
 
@@ -22,41 +39,53 @@ const Navbar = () => {
  
 
   return (
-    <div className={style.nav_container}>
-        {/* Left part of the nav menu in mobile version will be 100% wide and after Right Part */}
-        <div className={style.menu_left}>
-            
-              <div className={style.nav_menu_list}>
-                  {MENU_LIST.map((menu) => (
-                        <NavItem  key={menu.text} {...menu} className={style.nav_item}/>
-                  ))}
-              </div>
-        </div>
+      <div className={style.main_container}>
+            <div className={style.nav_container}>
+                  <div className={style.left_box}>
+                        <Link href="/" className={style.link_icon}>
+                                    <FontAwesomeIcon icon={faLocationDot} className={style.icon} id={style.location_icon} />
+                                    <div className={style.text_link}>Find a Store</div>
+                        </Link>
+                        <Link href="/" className={style.link_icon}>
+                                    <FontAwesomeIcon icon={faPhone} className={style.icon} id={style.c_icon} />
+                                    <div className={style.text_link}>Contact Us</div>
+                        </Link>
+                        <Link href="/" className={style.link_icon}>
+                                    <FontAwesomeIcon icon={faSearch} className={style.icon} id={style.search_icon} />
+                                    <input type="text"
+                                    className={style.input_search} placeholder="Search" />
+                       </Link>
+                  </div>
+                  <div className={style.right_box}>
+                       
+                        <Link href="/" className={style.link_icon}>
+                              <FontAwesomeIcon className={style.icon} icon={faHeartCircleCheck} id={style.heart_icon} />
+                              <div className={style.text_link}>Wishlist</div>
+                        </Link>
 
-        {/* Right Part  in mobile version  100% wide and on first place */}
-        <div className={style.menu_right}>
-        <div className={style.logo}>
-                <Image src="/logo.png" alt='logo' width='200' height='60' />
-            </div> 
-            
-            <form class="nosubmit">
-                <input class="nosubmit" type="search" placeholder="Search..."/>
-            </form>
+                        <Link href="/" className={style.link_icon}>
+                              <FontAwesomeIcon className={style.icon} icon={faUser} id={style.user_icon} />
+                       
+                        <div className={style.text_link}>Sign In</div>
+                        </Link>
 
-            <div className={style.login}>
-              <div classname={style.container_icon}>
-                <FontAwesomeIcon  icon={["fa", "user"]} alt='login' width='20' height='25' color='grey' />
-                </div>
+                        <Link href="/" className={style.link_icon}>
+                              <FontAwesomeIcon className={style.icon} icon={faCartShopping} id={style.cart_icon} />
+                        
+                        <div className={style.text_link}>Cart</div>
+                        </Link>
+                  </div>
             </div>
-
-            <div classname={style.container_icon}>
-            
-            {/* <FontAwesomeIcon icon="faCartShopping" /> */}
-            <FontAwesomeIcon icon={["fa", "cart-shopping"]}  alt='Cart' width='25' height='25'  color='grey'/>
-           
-          
+            <div className={style.menu_container}>
+            {/* Left part of the nav menu in mobile version will be 100% wide and after Right Part */}
+                  <div className={style.menu}>
+                        <div className={style.nav_menu_list}>
+                              {MENU_LIST.map((menu) => (
+                                    <NavItem  key={menu.text} {...menu} className={style.nav_item}/>
+                              ))}
+                        </div>
+                  </div>
             </div>
-        </div>
     </div>
   )
 }

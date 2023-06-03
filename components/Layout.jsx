@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Header from './Header'
 import style from '../styles/layout.module.css'
 
+
 const Layout = ({children}) => {
   return (
     <div className={style.layout_container}>

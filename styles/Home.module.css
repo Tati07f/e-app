@@ -7,33 +7,17 @@
 }
 
 
-
-
-
-
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
 .description {
   margin: 4rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: var(--f-size-s);
 }
 
 .code {
   background: #fafafa;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
+  font-size: var(--f-size-xs);
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -47,8 +31,8 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
-
-.card {
+ 
+ .card {
   margin: 0;
   padding: 1.5rem;
   text-align: left;
@@ -59,7 +43,7 @@
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
 }
-
+ 
 .card:hover,
 .card:focus,
 .card:active {
@@ -69,46 +53,36 @@
 
 .card h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: var(--f-size-s);
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: var(--f-size-s);
   line-height: 1.5;
 }
 
-.logo {
+ .logo {
   height: 1em;
   margin-left: 0.5rem;
 }
+ 
 
 
-@media (max-width: 1200px) and (min-width:620px) {
+
+@media screen and (max-width: 720px) {
+
   .grid {
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
   }
-} 
 
-@media (max-width: 619px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
+
+
+
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
+

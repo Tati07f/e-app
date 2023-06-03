@@ -1,6 +1,6 @@
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 import { useEffect, useRef } from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import style from '../styles/productCard.module.css'
 
 const ProductCard = ({product}) => {  

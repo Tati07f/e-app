@@ -2,6 +2,7 @@ import Main from '../components/Main'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { contentFulClient } from '../hooks/useContentFul'
+import ProductPage from '../components/ProductPage'
 
 export default function Home({ products }) {
   return (
@@ -11,16 +12,10 @@ export default function Home({ products }) {
         <title>Makra</title>
         <meta name="description" content="Beauty Product Online Store" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          />
-
-
       </Head>
 
-      <Main products={products} />
+      <Main />
+      <ProductPage products={products} />
 
     </div>
   )
